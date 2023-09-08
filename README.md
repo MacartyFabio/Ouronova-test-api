@@ -21,6 +21,7 @@ source venv/bin/activate
 python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver
+python fetch_dividends.py   # para fazer a importação dos dados da api do yahoo
 ```
 
 ## OpenAPI
