@@ -8,3 +8,7 @@ class Dividends(models.Model):
     symbol = models.CharField(max_length=10)
     date = models.DateField()
     dividend_amount = models.DecimalField(max_digits=10, decimal_places=2)
+
+    @property
+    def year(self):
+        return self.date.year
